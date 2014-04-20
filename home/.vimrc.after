@@ -1,0 +1,6 @@
+autocmd BufWritePre * :%s/\s\+$//e
+
+set nocompatible
+if has("autocmd")
+    filetype indent plugin on
+endif
