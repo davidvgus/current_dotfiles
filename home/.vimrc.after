@@ -4,3 +4,14 @@ set nocompatible
 if has("autocmd")
     filetype indent plugin on
 endif
+
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
