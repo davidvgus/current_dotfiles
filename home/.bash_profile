@@ -2,7 +2,8 @@ source ~/.profile
 
 
 source ~/git-completion.sh
-PS1="\[\033[1;31m\]\$(~/.rvm/bin/rvm-prompt) ${debian_chroot:+($debian_chroot)}\u@\h:\w\$(__git_ps1)\n\[\033[0m\]\$>"
+#PS1="\[\033[1;31m\]\$(~/.rvm/bin/rvm-prompt) ${debian_chroot:+($debian_chroot)}\u@\h:\w\$(__git_ps1)\n\[\033[0m\]\$>"
+source ~/.prompt
 PATH="$HOME/bin:$PATH"
 
 
