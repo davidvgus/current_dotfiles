@@ -45,6 +45,7 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias tmls='tmux list-sessions'
 alias tma='tmux a -t'
+alias ssht='ssh dave@thinkpad -X'
 set -o vi
 alias vim='vim -W ~/.vim-last-scriptout'
 
