@@ -48,6 +48,7 @@ alias tma='tmux a -t'
 alias ssht='ssh dave@thinkpad -X'
 set -o vi
 alias vim='vim -W ~/.vim-last-scriptout'
+alias ack='ack -u'
 
 
 echo "Loaded .bash_profile"
