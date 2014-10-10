@@ -8,6 +8,7 @@ endif
 
 function! NumberToggle()
   if(&relativenumber == 1)
+    set norelativenumber
     set number
   else
     set relativenumber
@@ -19,3 +20,19 @@ set relativenumber
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+func! WordProcessorMode()
+  setlocal formatoptions=1
+  setlocal textwidth=80
+  setlocal smartindent
+  setlocal noexpandtab
+  map j gj
+  map k gk
+  setlocal spell spelllang=en_us
+  "set thesaurus+=/Users/sbrown/.vim/thesaurus/mthesaur.txt
+  set complete+=s
+  set formatprg=par
+  setlocal wrap
+  setlocal linebreak
+endfu
+com! WP call WordProcessorMode()

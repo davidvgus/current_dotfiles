@@ -45,10 +45,14 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias tmls='tmux list-sessions'
 alias tma='tmux a -t'
-alias ssht='ssh dave@thinkpad -X'
+alias ssht='echo use_st'
+alias st='ssh dave@thinkpad -X'
+alias xr='xrefresh'
 set -o vi
 alias vim='vim -W ~/.vim-last-scriptout'
 alias ack='ack -u'
+alias t='todo.sh -t'
 
 
 echo "Loaded .bash_profile"
+echo "remember to list todos"
